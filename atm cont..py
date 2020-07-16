@@ -1,11 +1,17 @@
 
-customers = {}
-customers.update({100:{"account_number":100,"balance":1000,"pincode":123,"transactions":[]}})
-customers.update({101:{"account_number":101,"balance":2000,"pincode":123,"transactions":[]}})
-customers.update({102:{"account_number":102,"balance":3000,"pincode":123,"transactions":[]}})
-customers.update({103:{"account_number":103,"balance":4000,"pincode":123,"transactions":[]}})
-customers.update({104:{"account_number":104,"balance":5000,"pincode":123,"transactions":[]}})
 
+def withdraw(transaction,balance,amount):
+    print(type(transaction))
+    if balance <= 0:
+        print("insuffecient balance:")
+    elif balance < amount :
+        print("enter amount less than balance")
+    elif amount !=100 == 0 :
+        print("enter amount multiple of 100")
+    else:
+        transaction.append({"amt":amount,"data":"11 th june,2020"})
+        print("your current balance is ",balance-amount)
+    return balance
 
 while True:
     print("do you want to end the program(y/n)")
